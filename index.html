@@ -4,10 +4,100 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rsschool-landing-page</title>
+    <title>Resource Coffee</title>
+    <link rel="stylesheet" href="src/globals.css" />
+    <link rel="stylesheet" href="src/styleguide.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="d-home">
+      <header class="header">
+        <div class="container">
+          <div class="header-menu">
+            <a href="#home" aria-label="Resource Coffee home">
+              <img
+                class="logo"
+                src="src/assets/logo.svg"
+                alt="Resource Coffee"
+              />
+            </a>
+            <nav class="nav" aria-label="Primary navigation">
+              <div class="div">
+                <a class="link" href="#favorite-coffee">
+                  <span class="text-wrapper">Favorite coffee</span>
+                </a>
+              </div>
+              <div class="div">
+                <a class="link" href="#about">
+                  <span class="text-wrapper">About</span>
+                </a>
+              </div>
+              <div class="div">
+                <a class="link" href="#mobile-app">
+                  <span class="text-wrapper">Mobile app</span>
+                </a>
+              </div>
+              <div class="div">
+                <a class="link" href="#contact-us">
+                  <span class="text-wrapper">Contact us</span>
+                </a>
+              </div>
+            </nav>
+            <div class="header-actions">
+              <button
+                class="theme-switch"
+                type="button"
+                aria-label="Switch to dark theme"
+                aria-pressed="false"
+              >
+                <span class="light" aria-hidden="true">
+                  <img class="sun" src="src/assets/sun.svg" alt="" />
+                </span>
+                <span class="dark" aria-hidden="true">
+                  <img class="moon" src="src/assets/moon.svg" alt="" />
+                </span>
+              </button>
+              <div class="menu-item-wrapper">
+                <div class="div">
+                  <a class="link" href="#favorite-coffee">
+                    <span class="text-wrapper">Menu</span>
+                    <img
+                      class="img"
+                      src="src/assets/coffee-cup.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-wrapper" id="home">
+          <div class="hero-content">
+            <h2 class="text-heading-1">
+              <span class="italic">Enjoy</span> premium coffee at our charming
+              cafe
+            </h2>
+            <p class="text-wrapper-1">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </p>
+            <div class="light-button">
+              <span class="text-wrapper-7">Menu</span>
+              <img
+                class="img"
+                src="src/assets/coffee-cup.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- <script type="module" src="/src/main.js"></script> -->
   </body>
 </html>
