@@ -38,42 +38,15 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px 16px 8px 8px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: var(--backgroundcontainer);
-  border-radius: 100px;
-}
-
-.icon {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: var(--backgroundpage);
-  border-radius: 100px;
-  overflow: hidden;
-}
-
-.tab-item-2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 16px 8px 8px;
+  padding: 7px 16px 7px 12px;
   position: relative;
   flex: 0 0 auto;
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--borderprimary);
-}
-
-.div-wrapper {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: var(--borderprimary);
-  border-radius: 100px;
-  overflow: hidden;
+  background-color: var(--backgroundpage);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .coffee {
@@ -87,6 +60,62 @@
   line-height: var(--desktop-action-link-button-line-height);
   white-space: nowrap;
   font-style: var(--desktop-action-link-button-font-style);
+}
+
+.icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: var(--borderprimary);
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-item.active {
+  background-color: var(--backgroundcontainer);
+
+  .coffee {
+    color: var(--textinverse);
+  }
+
+  .icon {
+    background-color: var(--backgroundpage);
+  }
+}
+
+.tab-item:hover {
+  background-color: var(--backgroundcontainer);
+
+  .coffee {
+    color: var(--textinverse);
+  }
+
+  .icon {
+    background-color: var(--backgroundpage);
+  }
+}
+
+.tab-item:focus-visible {
+  outline: 2px solid var(--borderprimary);
+  outline-offset: 2px;
+}
+
+.div-wrapper {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: var(--borderprimary);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 .grid {
@@ -103,6 +132,7 @@
 .preview {
   display: inline-flex;
   flex-direction: column;
+  width: 310px;
   height: 506px;
   align-items: center;
   position: relative;
@@ -153,4 +183,15 @@
   letter-spacing: var(--desktop-body-medium-letter-spacing);
   line-height: var(--desktop-body-medium-line-height);
   font-style: var(--desktop-body-medium-font-style);
+}
+
+.text-wrapper-4 {
+  text-align: start;
+}
+
+@media (width <= 1439px) {
+  .offer {
+    align-items: center;
+    width: 100%;
+  }
 }

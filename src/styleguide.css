@@ -99,9 +99,9 @@
   --collection-1-background-modalcontrol: rgb(102 95 85 / 100%);
   --collection-1-dark-bg-modal: var(--collection-1-dark-bg-container);
   --collection-1-dark-bg-modal-control: var(--collection-1-dark-bg-page);
-  --logo-url: url('assets/logo.svg');
+  --logo-url: url('/src/assets/logo.svg');
 }
 
 .d-home.dark {
-  --logo-url: url('assets/dark/logo.svg');
+  --logo-url: url('/src/assets/dark/logo.svg');
 }
