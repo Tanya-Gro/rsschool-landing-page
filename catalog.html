@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resource Coffee</title>
+  <link rel="stylesheet" href="src/globals.css">
+  <link rel="stylesheet" href="src/styleguide.css">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/catalog.css">
+</head>
+
+<body>
+  <div class="d-home">
+    <load src="src/layouts/header.html" />
+    <main>
+      <section class="menu" id="menu" aria-labelledby="menu-heading">
+        <div class="container-2">
+          <div class="offer">
+            <h1 class="behind-each-of-our" id="menu-heading">
+              <span class="span">Behind each of our cups hides an </span>
+              <span class="text-wrapper-2">amazing surprise</span>
+            </h1>
+            <div class="tabs" role="tablist" aria-label="Menu categories">
+              <button class="tab-item" type="button" role="tab" aria-selected="true" aria-controls="coffee-menu-panel"
+                id="coffee-tab">
+                <span class="icon" aria-hidden="true">
+                  <span class="text-wrapper-3">☕</span>
+                </span>
+                <span class="text-wrapper-4">Coffee</span>
+              </button>
+              <button class="tab-item-2" type="button" role="tab" aria-selected="false" aria-controls="tea-menu-panel"
+                id="tea-tab">
+                <span class="div-wrapper" aria-hidden="true">
+                  <span class="text-wrapper-3">🫖</span>
+                </span>
+                <span class="coffee">Tea</span>
+              </button>
+              <button class="tab-item-2" type="button" role="tab" aria-selected="false"
+                aria-controls="dessert-menu-panel" id="dessert-tab">
+                <span class="div-wrapper" aria-hidden="true">
+                  <span class="text-wrapper-3">🍰</span>
+                </span>
+                <span class="coffee">Dessert</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid" id="coffee-menu-panel" role="tabpanel" aria-labelledby="coffee-tab">
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-1.jpg" alt="Irish coffee with whipped milk">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Irish coffee</h2>
+                  <p class="espresso-coffee-with">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                </div>
+                <p class="text-wrapper-6">$7.00</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-2.jpg" alt="Kahlua coffee with frothed milk">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Kahlua coffee</h2>
+                  <p class="espresso-coffee-with">Classic coffee with milk and Kahlua liqueur under a cap of frothed
+                    milk</p>
+                </div>
+                <p class="text-wrapper-6">$7.00</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-3.jpg" alt="Honey raf coffee">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Honey raf</h2>
+                  <p class="espresso-coffee-with">Espresso with frothed milk, cream and aromatic honey</p>
+                </div>
+                <p class="text-wrapper-6">$5.50</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-4.jpg" alt="Ice cappuccino">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Ice cappuccino</h2>
+                  <p class="espresso-coffee-with">Cappuccino with soft thick foam in summer version with ice</p>
+                </div>
+                <p class="text-wrapper-6">$5.00</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-5.jpg" alt="Espresso coffee">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Espresso</h2>
+                  <p class="espresso-coffee-with">Classic black coffee</p>
+                </div>
+                <p class="text-wrapper-6">$4.50</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-6.jpg" alt="Latte with milk foam">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Latte</h2>
+                  <p class="espresso-coffee-with">Espresso coffee with the addition of steamed milk and dense milk foam
+                  </p>
+                </div>
+                <p class="text-wrapper-6">$5.50</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-7.jpg" alt="Latte macchiato">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Latte macchiato</h2>
+                  <p class="espresso-coffee-with">Espresso with frothed milk and chocolate</p>
+                </div>
+                <p class="text-wrapper-6">$5.50</p>
+              </div>
+            </article>
+            <article class="preview">
+              <img class="box" src="src/assets/coffee-8.jpg" alt="Coffee with cognac and whipped cream">
+              <div class="description">
+                <div class="title">
+                  <h2 class="text-wrapper-5">Coffee with cognac</h2>
+                  <p class="espresso-coffee-with">Fragrant black coffee with cognac and whipped cream</p>
+                </div>
+                <p class="text-wrapper-6">$6.50</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <load src="src/layouts/footer.html" />
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
