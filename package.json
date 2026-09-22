@@ -38,8 +38,5 @@
     "*.{json,md,html}": [
       "prettier --write"
     ]
-  },
-  "dependencies": {
-    "vite-plugin-html-inject": "^1.1.2"
   }
 }
