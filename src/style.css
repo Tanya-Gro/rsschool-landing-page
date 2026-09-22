@@ -551,6 +551,115 @@ main {
   height: 430px;
 }
 
+.mobile-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.container-4 {
+  display: flex;
+  max-width: 1360px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+  flex: 1;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 1;
+}
+
+.download-our-app-to {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 131.59px;
+}
+
+.text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--desktop-body-medium-font-family);
+  font-weight: var(--desktop-body-medium-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-medium-font-size);
+  letter-spacing: var(--desktop-body-medium-letter-spacing);
+  line-height: var(--desktop-body-medium-line-height);
+  font-style: var(--desktop-body-medium-font-style);
+}
+
+.buttons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.div-3 {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  position: relative;
+  border-radius: 100px;
+  border: 1px solid;
+  border-color: var(--borderinverse);
+}
+
+.icon {
+  position: relative;
+  width: 33px;
+  height: 33px;
+}
+
+.icon-2 {
+  position: relative;
+  width: 73.36%;
+  height: 87.91%;
+  top: 5%;
+  left: 12.91%;
+}
+
+.d-home .text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--desktop-body-caption-font-family);
+  font-weight: var(--desktop-body-caption-font-weight);
+  color: var(--textprimary);
+  font-size: var(--desktop-body-caption-font-size);
+  text-align: center;
+  letter-spacing: var(--desktop-body-caption-letter-spacing);
+  line-height: var(--desktop-body-caption-line-height);
+  white-space: nowrap;
+  font-style: var(--desktop-body-caption-font-style);
+}
+
 .text-wrapper-7 {
   position: relative;
   width: fit-content;
@@ -562,6 +671,13 @@ main {
   line-height: var(--desktop-action-link-button-line-height);
   white-space: nowrap;
   font-style: var(--desktop-action-link-button-font-style);
+}
+
+.mobile-screens {
+  position: relative;
+  width: 630px;
+  height: 630px;
+  object-fit: cover;
 }
 
 @media (width <= 1439px) {
@@ -578,5 +694,12 @@ main {
 
   .box-2 {
     display: none;
+  }
+
+  .d-home .container-4,
+  .d-home .container-5 {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: auto;
   }
 }
