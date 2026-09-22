@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 100px;
   padding: 20px 0 40px;
   position: relative;
@@ -194,7 +195,6 @@
   flex-direction: column;
   padding-left: 100px;
   position: relative;
-  align-self: stretch;
   justify-content: center;
   max-width: 1360px;
   width: 100%;
@@ -277,15 +277,22 @@
 main {
   padding: 0 40px;
   width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
 .container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
-  align-self: stretch;
   width: 100%;
+  max-width: 1440px;
   flex: 0 0 auto;
 }
 
@@ -499,6 +506,51 @@ main {
   background-color: var(--borderinverse);
 }
 
+.images {
+  display: flex;
+  max-width: 1360px;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.box,
+.box-2 {
+  position: relative;
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-img {
+  position: absolute;
+  width: 660px;
+  height: 590px;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1);
+}
+
+.box-2 {
+  height: 430px;
+}
+
 .text-wrapper-7 {
   position: relative;
   width: fit-content;
@@ -515,5 +567,16 @@ main {
 @media (width <= 1439px) {
   .d-home .d-slider {
     width: 100%;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .box-2 {
+    display: none;
   }
 }
