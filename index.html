@@ -97,7 +97,139 @@
           </div>
         </div>
       </header>
+      <main>
+        <section
+          class="container-wrapper"
+          id="favorite-coffee"
+          aria-labelledby="favorite-coffee-heading"
+        >
+          <div class="container-2">
+            <h2 class="choose-your-favorite" id="favorite-coffee-heading">
+              <span class="span">Choose your </span>
+              <span class="text-wrapper-2">favorite</span>
+              <span class="span"> coffee</span>
+            </h2>
+            <div
+              class="d-slider"
+              role="region"
+              aria-label="Featured coffee carousel"
+            >
+              <div class="slider">
+                <button
+                  class="button-arrow"
+                  type="button"
+                  id="prev-btn"
+                  aria-label="Show previous coffee"
+                >
+                  <img class="img-2" src="src/assets/arrow-left.svg" alt="" />
+                </button>
+                <div class="row-slider" aria-live="polite">
+                  <div class="slider-track">
+                    <article
+                      class="slide"
+                      aria-label="S’mores Frappuccino, $5.50"
+                    >
+                      <div class="content-2">
+                        <img
+                          class="coffee-slider"
+                          src="src/assets/coffee-slider-1.png"
+                          alt="S’mores Frappuccino"
+                        />
+                        <div class="description">
+                          <h2 class="text-wrapper-3">S’mores Frappuccino</h2>
+                          <p class="p">
+                            This new drink takes an espresso and mixes it with
+                            brown sugar and cinnamon before being topped with
+                            oat milk.
+                          </p>
+                          <p class="text-wrapper-4">$5.50</p>
+                        </div>
+                      </div>
+                    </article>
+                    <article
+                      class="slide"
+                      aria-label="Caramel Macchiato, $5.00"
+                    >
+                      <div class="content-2">
+                        <img
+                          class="coffee-slider"
+                          src="src/assets/coffee-slider-2.png"
+                          alt="Caramel Macchiato"
+                        />
+                        <div class="description">
+                          <h2 class="text-wrapper-3">Caramel Macchiato</h2>
+                          <p class="p">
+                            Fragrant and unique classic espresso with rich
+                            caramel-peanut syrup, with cream under whipped thick
+                            foam.
+                          </p>
+                          <p class="text-wrapper-4">$5.00</p>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="slide" aria-label="Ice coffee, $4.50">
+                      <div class="content-2">
+                        <img
+                          class="coffee-slider"
+                          src="src/assets/coffee-slider-3.png"
+                          alt="Ice coffee"
+                        />
+                        <div class="description">
+                          <h2 class="text-wrapper-3">Ice coffee</h2>
+                          <p class="p">
+                            A popular summer drink that tones and invigorates.
+                            Prepared from coffee, milk and ice.
+                          </p>
+                          <p class="text-wrapper-4">$4.50</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <button
+                  class="button-arrow"
+                  type="button"
+                  id="next-btn"
+                  aria-label="Show next coffee"
+                >
+                  <img class="img-2" src="src/assets/arrow-right.svg" alt="" />
+                </button>
+              </div>
+              <div
+                class="controls"
+                role="tablist"
+                aria-label="Choose featured coffee"
+              >
+                <button
+                  class="control active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-label="Show S’mores Frappuccino"
+                  data-index="0"
+                ></button>
+                <button
+                  class="control"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Show Caramel Macchiato"
+                  data-index="1"
+                ></button>
+                <button
+                  class="control"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Show Ice coffee"
+                  data-index="2"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
