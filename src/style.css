@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .d-home {
   display: flex;
   flex-direction: column;
