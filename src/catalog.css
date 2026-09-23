@@ -1,10 +1,9 @@
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 0 40px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -13,7 +12,7 @@
 
 .behind-each-of-our {
   position: relative;
-  width: 800px;
+  max-width: 800px;
   margin-top: -1px;
   font-family: var(--desktop-action-link-button-font-family);
   font-weight: 400;
@@ -21,7 +20,7 @@
   font-size: 60px;
   text-align: center;
   letter-spacing: 0;
-  line-height: 75px;
+  line-height: 25px;
 }
 
 .tabs {

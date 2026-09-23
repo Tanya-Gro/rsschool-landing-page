@@ -875,8 +875,8 @@ address {
     width: auto;
   }
 
-  .offer {
-    width: 400px;
+  .container-4 {
+    flex-direction: column;
   }
 }
 
@@ -903,26 +903,21 @@ address {
     width: min(45vw, 630px);
     height: auto;
   }
+
+  .container-5 {
+    padding: 40px;
+  }
 }
 
 @media (width <= 767px) {
-  .d-home {
-    gap: 80px;
-    padding-top: 20px;
-  }
-
   .container,
   .container-wrapper {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .header-actions {
     gap: 12px;
-  }
-
-  .theme-switch {
-    width: 76px;
   }
 
   .menu-item-wrapper {
@@ -1004,10 +999,6 @@ address {
 
   .mobile-screens {
     width: min(100%, 420px);
-  }
-
-  .container-5 {
-    padding: 40px;
   }
 
   .div-4 {
