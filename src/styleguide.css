@@ -100,8 +100,29 @@
   --collection-1-dark-bg-modal: var(--collection-1-dark-bg-container);
   --collection-1-dark-bg-modal-control: var(--collection-1-dark-bg-page);
   --logo-url: url('/src/assets/logo.svg');
+  --coffee-cup-url: url('/src/assets/coffee-cup.svg');
+  --arrow-left-url: url('/src/assets/arrow-left.svg');
+  --arrow-right-url: url('/src/assets/arrow-right.svg');
+  --mobile-screens-url: url('/src/assets/mobile-screens.png');
+  --app-store-url: url('/src/assets/app-store.svg');
+  --google-play-url: url('/src/assets/google-play.svg');
 }
 
-.d-home.dark {
+.dark {
+  --textprimary: rgb(225 212 201 / 100%);
+  --textinverse: rgb(225 212 201 / 100%);
+  --textaccent: rgb(176 144 122 / 100%);
+  --backgroundpage: rgb(41 40 38 / 100%);
+  --backgroundcontainer: rgb(64 63 61 / 100%);
+  --backgroundoverlay: rgb(41 40 38 / 80%);
+  --borderprimary: rgb(102 95 85 / 100%);
+  --borderinverse: rgb(193 182 173 / 100%);
+  --textdark: rgb(225 212 201 / 100%);
   --logo-url: url('/src/assets/dark/logo.svg');
+  --coffee-cup-url: url('/src/assets/dark/coffee-cup.svg');
+  --arrow-left-url: url('/src/assets/dark/arrow-left.svg');
+  --arrow-right-url: url('/src/assets/dark/arrow-right.svg');
+  --mobile-screens-url: url('/src/assets/dark/mobile-screens.png');
+  --app-store-url: url('/src/assets/dark/app-store.svg');
+  --google-play-url: url('/src/assets/dark/google-play.svg');
 }

@@ -6,6 +6,14 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resource Coffee</title>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('CH-Theme');
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) { }
+    })();
+  </script>
   <link rel="stylesheet" href="src/globals.css">
   <link rel="stylesheet" href="src/styleguide.css">
   <link rel="stylesheet" href="src/style.css">
@@ -45,7 +53,7 @@
           <div class="d-slider" role="region">
             <div class="slider">
               <button class="button-arrow" type="button" id="prev-btn" aria-label="Show previous coffee">
-                <img class="img-2" src="src/assets/arrow-left.svg" alt="Previous slide">
+                <img class="img-2 arrow-left" src="src/assets/arrow-left.svg" alt="Previous slide">
               </button>
               <div class="row-slider" aria-live="polite">
                 <div class="slider-track">
@@ -93,7 +101,7 @@
                 </div>
               </div>
               <button class="button-arrow" type="button" id="next-btn" aria-label="Show next coffee">
-                <img class="img-2" src="src/assets/arrow-right.svg" alt="Next slide">
+                <img class="img-2 arrow-right" src="src/assets/arrow-right.svg" alt="Next slide">
               </button>
             </div>
             <div class="controls" role="tablist">
@@ -151,7 +159,7 @@
             <div class="buttons">
               <a class="div-3" href="#" aria-label="Download Resource on the App Store">
                 <span class="icon" aria-hidden="true">
-                  <img class="icon-2" src="src/assets/app-store.svg" alt="App Store Link">
+                  <img class="icon-2 app-store-icon" src="src/assets/app-store.svg" alt="App Store Link">
                 </span>
                 <span class="text">
                   <span class="text-wrapper-6">Available on the</span>
@@ -159,7 +167,8 @@
                 </span>
               </a>
               <a class="div-3" href="#" aria-label="Download Resource on Google Play">
-                <img class="icon" src="src/assets/google-play.svg" alt="Google Play Link" aria-hidden="true">
+                <img class="icon google-play-icon" src="src/assets/google-play.svg" alt="Google Play Link"
+                  aria-hidden="true">
                 <span class="text">
                   <span class="text-wrapper-6">Available on</span>
                   <span class="text-wrapper-7">Google Play</span>
@@ -167,7 +176,7 @@
               </a>
             </div>
           </div>
-          <img class="mobile-screens" src="src/assets/mobile-screens.svg"
+          <img class="mobile-screens" src="src/assets/mobile-screens.png"
             alt="Resource mobile app displayed on two smartphones">
         </div>
       </section>

@@ -142,7 +142,7 @@ html {
   border-color: var(--borderprimary);
 }
 
-.light {
+.light-mode {
   display: flex;
   width: 36px;
   height: 36px;
@@ -151,7 +151,7 @@ html {
   gap: 10px;
   padding: 1px;
   position: relative;
-  background-color: var(--textaccent);
+  background-color: var(--backgroundoverlay);
   border-radius: 100px;
   overflow: hidden;
 }
@@ -162,7 +162,7 @@ html {
   height: 22px;
 }
 
-.dark {
+.dark-mode {
   display: flex;
   width: 36px;
   height: 36px;
@@ -170,6 +170,7 @@ html {
   justify-content: center;
   position: relative;
   border-radius: 100px;
+  background-color: var(--textinverse);
   overflow: hidden;
 }
 
@@ -192,6 +193,7 @@ html {
   position: relative;
   width: 20px;
   height: 20px;
+  content: var(--coffee-cup-url);
 }
 
 .hero-wrapper {
@@ -388,11 +390,27 @@ main {
   transition: filter 0.3s ease-in-out;
 }
 
+.arrow-left {
+  content: var(--arrow-left-url);
+}
+
+.arrow-right {
+  content: var(--arrow-right-url);
+}
+
 .button-arrow:hover {
   background-color: var(--backgroundcontainer);
 
   .img-2 {
     filter: invert(1);
+  }
+}
+
+.dark .button-arrow:hover {
+  border-color: var(--backgroundcontainer);
+
+  .img-2 {
+    filter: none;
   }
 }
 
@@ -632,6 +650,14 @@ main {
   height: 33px;
 }
 
+.app-store-icon {
+  content: var(--app-store-url);
+}
+
+.google-play-icon {
+  content: var(--google-play-url);
+}
+
 .icon-2 {
   position: relative;
   width: 73.36%;
@@ -640,7 +666,7 @@ main {
   left: 12.91%;
 }
 
-.d-home .text {
+.text {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -682,6 +708,7 @@ main {
   width: 630px;
   height: 630px;
   object-fit: cover;
+  content: var(--mobile-screens-url);
 }
 
 .contacts {
@@ -757,6 +784,14 @@ main {
 
   .img-2 {
     filter: invert(1);
+  }
+}
+
+.dark .button-icon-light:hover {
+  border-color: var(--backgroundcontainer);
+
+  .img-2 {
+    filter: none;
   }
 }
 
