@@ -18,11 +18,13 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  background-color: transparent;
+  background-color: var(--backgroundpagetrans);
   padding: 0 40px;
 }
 
@@ -657,6 +659,7 @@ main {
   border-radius: 100px;
   border: 1px solid;
   border-color: var(--borderinverse);
+  transition: background-color 0.3s;
 }
 
 .icon {
@@ -665,20 +668,31 @@ main {
   height: 33px;
 }
 
+.div-3:hover {
+  background-color: var(--backgroundcontainer);
+
+  .icon {
+    filter: invert(1);
+  }
+
+  .text-wrapper-6,
+  .text-wrapper-7 {
+    color: var(--textinverse);
+  }
+}
+
+.dark .div-3:hover {
+  .icon {
+    filter: none;
+  }
+}
+
 .app-store-icon {
   content: var(--app-store-url);
 }
 
 .google-play-icon {
   content: var(--google-play-url);
-}
-
-.icon-2 {
-  position: relative;
-  width: 73.36%;
-  height: 87.91%;
-  top: 5%;
-  left: 12.91%;
 }
 
 .text {

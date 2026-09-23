@@ -3,6 +3,7 @@
   --textinverse: rgb(225 212 201 / 100%);
   --textaccent: rgb(176 144 122 / 100%);
   --backgroundpage: rgb(225 212 201 / 100%);
+  --backgroundpagetrans: rgb(225 212 201 / 90%);
   --backgroundcontainer: rgb(102 95 85 / 100%);
   --backgroundoverlay: rgb(64 63 61 / 80%);
   --borderprimary: rgb(193 182 173 / 100%);
@@ -113,6 +114,7 @@
   --textinverse: rgb(225 212 201 / 100%);
   --textaccent: rgb(176 144 122 / 100%);
   --backgroundpage: rgb(41 40 38 / 100%);
+  --backgroundpagetrans: rgb(41 40 38 / 90%);
   --backgroundcontainer: rgb(64 63 61 / 100%);
   --backgroundoverlay: rgb(41 40 38 / 80%);
   --borderprimary: rgb(102 95 85 / 100%);
