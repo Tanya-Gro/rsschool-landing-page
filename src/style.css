@@ -896,10 +896,6 @@ address {
 
 @media (width <= 1023px) {
   .nav,
-  .coffee-menu {
-    display: none;
-  }
-
   .header-menu {
     gap: 20px;
   }
@@ -924,6 +920,10 @@ address {
 }
 
 @media (width <= 767px) {
+  .nav {
+    display: none;
+  }
+
   .container,
   .container-wrapper {
     padding-right: 0;
@@ -1017,5 +1017,74 @@ address {
 
   .div-4 {
     width: 100%;
+  }
+}
+
+body.nonescroll {
+  overflow: hidden;
+}
+
+.burger {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background-color: var(--backgroundpage);
+  border: 1px solid var(--borderinverse);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 15;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.5s ease 0s;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.burger:hover {
+  background: var(--backgroundcontainer, #665f55);
+  border-color: var(--backgroundcontainer, #665f55);
+}
+
+.burger:focus-visible {
+  outline: 2px solid var(--textaccent, #b0907a);
+  outline-offset: 2px;
+}
+
+.burger-line {
+  position: absolute;
+  width: 20px;
+  height: 1.5px;
+  background: var(--textprimary, #403f3d);
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.25s ease;
+}
+
+.burger-line:nth-child(1) {
+  transform: translateY(-4px);
+}
+
+.burger-line:nth-child(2) {
+  transform: translateY(4px);
+}
+
+.burger.is-open .burger-line:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.burger.is-open .burger-line:nth-child(2) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.burger:hover .burger-line {
+  background: var(--textinverse, #e1d4c9);
+}
+
+@media (width <= 767px) {
+  .burger {
+    display: inline-flex;
   }
 }
