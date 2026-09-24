@@ -141,6 +141,7 @@
   overflow: hidden;
   border: 1px solid;
   border-color: var(--borderprimary);
+  cursor: pointer;
 }
 
 .box {
@@ -200,4 +201,20 @@
     align-items: center;
     width: 100%;
   }
+}
+
+.img-3 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  color: var(--textprimary);
+  transition: filter 0.3s ease-in-out;
+}
+
+.button-arrow:hover .img-3 {
+  filter: invert(1);
+}
+
+.dark .img-3 {
+  filter: invert(1);
 }
