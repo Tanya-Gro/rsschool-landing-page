@@ -18,9 +18,77 @@
   <link rel="stylesheet" href="src/css/styleguide.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/catalog.css">
+  <link rel="stylesheet" href="src/css/modal.css">
 </head>
 
 <body>
+  <dialog class="modal">
+    <div class="modal-image">
+      <img src="/src/assets/coffee-1.jpg" alt="Irish coffee with whipped milk in a clear glass cup" />
+    </div>
+
+    <div class="modal-details">
+      <header class="modal-header">
+        <h2 id="coffee-title">Irish coffee</h2>
+        <p>
+          Fragrant black coffee with Jameson Irish whiskey and
+          whipped milk
+        </p>
+      </header>
+
+      <section class="choice-group" aria-labelledby="size-label">
+        <h2 id="size-label">Size</h2>
+        <div class="pill-row" role="group" aria-label="Select size">
+          <button class="pill is-active" type="button">
+            <span class="pill-icon">S</span>
+            <span>Coffee</span>
+          </button>
+          <button class="pill" type="button">
+            <span class="pill-icon">M</span>
+            <span>Tea</span>
+          </button>
+          <button class="pill" type="button">
+            <span class="pill-icon">L</span>
+            <span>Dessert</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="choice-group" aria-labelledby="additives-label">
+        <h2 id="additives-label">Additives</h2>
+        <div class="pill-row" role="group" aria-label="Select additive">
+          <button class="pill" type="button">
+            <span class="pill-icon">1</span>
+            <span>Sugar</span>
+          </button>
+          <button class="pill" type="button">
+            <span class="pill-icon">2</span>
+            <span>Cinnamon</span>
+          </button>
+          <button class="pill" type="button">
+            <span class="pill-icon">3</span>
+            <span>Syrup</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="total-row" aria-label="Total price">
+        <span>Total:</span>
+        <strong>$7.00</strong>
+      </div>
+
+      <aside class="note" aria-label="Pricing note">
+        <span class="note-icon" aria-hidden="true">i</span>
+        <p>
+          The cost is not final. Download our mobile app to see the
+          final price and place your order. Earn loyalty points and
+          enjoy your favorite coffee with up to 20% discount.
+        </p>
+      </aside>
+
+      <button class="close-btn" type="button">Close</button>
+    </div>
+  </dialog>
   <div class="d-home">
     <load src="src/layouts/header.html" />
     <main>

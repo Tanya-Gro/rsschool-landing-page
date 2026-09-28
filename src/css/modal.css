@@ -1,0 +1,191 @@
+dialog {
+  border: none;
+  border-radius: 40px;
+  padding: 16px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 15%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--textprimary);
+  background: var(--backgroundmodal);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+dialog::backdrop {
+  background-color: var(--backgroundoverlay);
+}
+
+.modal-image {
+  width: 310px;
+  height: 310px;
+  flex: 0 0 310px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-details {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-header h1,
+.total-row strong {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.modal-header p,
+.choice-group h2,
+.pill,
+.total-row span,
+.note p,
+.close-button {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-header p {
+  margin: 12px 0 0;
+}
+
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice-group h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  border: 1px solid var(--borderprimary);
+  background: transparent;
+  color: var(--textprimary);
+  border-radius: 100px;
+  padding: 7px 16px 7px 8px;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pill-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: var(--borderprimary);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.pill.is-active {
+  background: var(--backgroundtabs);
+  color: var(--textprimary);
+  border-color: var(--backgroundoverlay);
+}
+
+.pill.is-active .pill-icon {
+  background: var(--backgroundmodal);
+  color: var(--textprimary);
+}
+
+.pill:hover:not(.is-active),
+.close-button:hover {
+  background: rgb(102 95 85 / 8%);
+}
+
+.total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.total-row span {
+  font-weight: 600;
+}
+
+.note {
+  border-top: 1px solid var(--borderprimary);
+  padding-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.note-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--textprimary);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+
+.note p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.close-btn {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 100px;
+  border: 1px solid var(--borderprimaryinverse);
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  dialog {
+    max-width: 688px;
+  }
+}
+
+@media (width <= 570px) {
+  .modal-image {
+    display: none;
+  }
+}
