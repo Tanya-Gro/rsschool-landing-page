@@ -1,7 +1,8 @@
-import { theme } from './theme';
-// import { initCards } from './initCards';
 import catalog from '/src/data/catalog.json';
+
+import { theme } from './theme';
 import { createCard } from './createCard';
+import { openModal } from './modal';
 
 theme();
 
@@ -17,8 +18,12 @@ const expanded = new Map(panels.map((p) => [p.dataset.category, false]));
 const isMobile = () =>
   window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches;
 
-function renderPanel(panel, items) {
-  panel.replaceChildren(...items.map(createCard));
+function renderPanel(panel, items, category) {
+  panel.replaceChildren(
+    ...items.map((item) =>
+      createCard(item, (it) => openModal({ item: it, category }))
+    )
+  );
 }
 
 function applyVisibility(panel) {
@@ -96,8 +101,9 @@ window.addEventListener('resize', () => {
 
 (() => {
   panels.forEach((panel) => {
-    const items = catalog[panel.dataset.category] ?? [];
-    renderPanel(panel, items);
+    const category = panel.dataset.category;
+    const items = catalog[category] ?? [];
+    renderPanel(panel, items, category);
     applyVisibility(panel);
   });
   updateAddButton();

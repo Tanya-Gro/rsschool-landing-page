@@ -1,0 +1,38 @@
+{
+  "coffee": {
+    "sizes": [
+      { "label": "200 ml", "multiplier": 1 },
+      { "label": "300 ml", "multiplier": 1.25 },
+      { "label": "400 ml", "multiplier": 1.5 }
+    ],
+    "additives": [
+      { "label": "Sugar", "price": 0.1 },
+      { "label": "Cinnamon", "price": 0.1 },
+      { "label": "Syrup", "price": 0.5 }
+    ]
+  },
+  "tea": {
+    "sizes": [
+      { "label": "200 ml", "multiplier": 1 },
+      { "label": "300 ml", "multiplier": 1.25 },
+      { "label": "400 ml", "multiplier": 1.5 }
+    ],
+    "additives": [
+      { "label": "Sugar", "price": 0.1 },
+      { "label": "Lemon", "price": 0.4 },
+      { "label": "Syrup", "price": 0.5 }
+    ]
+  },
+  "dessert": {
+    "sizes": [
+      { "label": "50 g", "multiplier": 1 },
+      { "label": "100 g", "multiplier": 1.25 },
+      { "label": "200 g", "multiplier": 1.5 }
+    ],
+    "additives": [
+      { "label": "Berries", "price": 0.8 },
+      { "label": "Nuts", "price": 0.7 },
+      { "label": "Jam", "price": 0.6 }
+    ]
+  }
+}
