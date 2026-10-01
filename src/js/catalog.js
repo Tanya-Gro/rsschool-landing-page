@@ -1,5 +1,4 @@
 import catalog from '/src/data/catalog.json';
-
 import { theme } from './theme';
 import { createCard } from './createCard';
 import { openModal } from './modal';
@@ -12,8 +11,6 @@ const MOBILE_VISIBLE = 4;
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 const panels = [...document.querySelectorAll('[role="tabpanel"]')];
 const addCardsBtn = document.getElementById('add-cards');
-
-const expanded = new Map(panels.map((p) => [p.dataset.category, false]));
 
 const isMobile = () =>
   window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches;
@@ -28,11 +25,17 @@ function renderPanel(panel, items, category) {
 
 function applyVisibility(panel) {
   const cards = [...panel.querySelectorAll('.preview')];
-  const category = panel.dataset.category;
-  const showAll = !isMobile() || expanded.get(category);
+
+  if (!isMobile()) {
+    cards.forEach((card) => (card.hidden = false));
+    return;
+  }
+
+  const allowedCount =
+    parseInt(panel.dataset.visibleCount, 10) || MOBILE_VISIBLE;
 
   cards.forEach((card, i) => {
-    card.hidden = !showAll && i >= MOBILE_VISIBLE;
+    card.hidden = i >= allowedCount;
   });
 }
 
@@ -40,10 +43,11 @@ function updateAddButton() {
   const activePanel = panels.find((p) => !p.hidden);
   if (!activePanel) return;
 
-  const total = activePanel.querySelectorAll('.preview').length;
-  const category = activePanel.dataset.category;
-  const needButton =
-    isMobile() && total > MOBILE_VISIBLE && !expanded.get(category);
+  const cards = activePanel.querySelectorAll('.preview');
+  const allowedCount =
+    parseInt(activePanel.dataset.visibleCount, 10) || MOBILE_VISIBLE;
+
+  const needButton = isMobile() && cards.length > allowedCount;
 
   addCardsBtn.hidden = !needButton;
   addCardsBtn.setAttribute('aria-controls', activePanel.id);
@@ -59,6 +63,8 @@ function activateTab(tab) {
 
   panels.forEach((panel) => {
     panel.hidden = panel.id !== tab.getAttribute('aria-controls');
+    panel.dataset.visibleCount = MOBILE_VISIBLE;
+    applyVisibility(panel);
   });
 
   updateAddButton();
@@ -89,7 +95,11 @@ addCardsBtn.addEventListener('click', () => {
   const activePanel = panels.find((p) => !p.hidden);
   if (!activePanel) return;
 
-  expanded.set(activePanel.dataset.category, true);
+  const currentCount =
+    parseInt(activePanel.dataset.visibleCount, 10) || MOBILE_VISIBLE;
+
+  activePanel.dataset.visibleCount = currentCount + MOBILE_VISIBLE;
+
   applyVisibility(activePanel);
   updateAddButton();
 });
@@ -103,6 +113,7 @@ window.addEventListener('resize', () => {
   panels.forEach((panel) => {
     const category = panel.dataset.category;
     const items = catalog[category] ?? [];
+    panel.dataset.visibleCount = MOBILE_VISIBLE;
     renderPanel(panel, items, category);
     applyVisibility(panel);
   });
