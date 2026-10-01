@@ -1,5 +1,5 @@
-import { initSlider } from './slider.js';
-import { theme } from './theme.js';
+import { initSlider } from './js/slider.js';
+import { theme } from './js/theme.js';
 
 initSlider();
 theme();

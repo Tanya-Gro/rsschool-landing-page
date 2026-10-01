@@ -1,0 +1,148 @@
+{
+  "coffee": [
+    {
+      "name": "Irish coffee",
+      "alt": "Irish coffee with whipped milk",
+      "description": "Fragrant black coffee with Jameson Irish whiskey and whipped milk",
+      "price": "7.00",
+      "image": "src/assets/coffee-1.jpg"
+    },
+    {
+      "name": "Kahlua coffee",
+      "alt": "Kahlua coffee with frothed milk",
+      "description": "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk",
+      "price": "7.00",
+      "image": "src/assets/coffee-2.jpg"
+    },
+    {
+      "name": "Honey raf",
+      "alt": "Honey raf coffee",
+      "description": "Espresso with frothed milk, cream and aromatic honey",
+      "price": "5.50",
+      "image": "src/assets/coffee-3.jpg"
+    },
+    {
+      "name": "Ice cappuccino",
+      "alt": "Ice cappuccino",
+      "description": "Cappuccino with soft thick foam in summer version with ice",
+      "price": "5.00",
+      "image": "src/assets/coffee-4.jpg"
+    },
+    {
+      "name": "Espresso",
+      "alt": "Espresso coffee",
+      "description": "Classic black coffee",
+      "price": "4.50",
+      "image": "src/assets/coffee-5.jpg"
+    },
+    {
+      "name": "Latte",
+      "alt": "Latte with milk foam",
+      "description": "Espresso coffee with the addition of steamed milk and dense milk foam",
+      "price": "5.50",
+      "image": "src/assets/coffee-6.jpg"
+    },
+    {
+      "name": "Latte macchiato",
+      "alt": "Latte macchiato",
+      "description": "Espresso with frothed milk and chocolate",
+      "price": "5.50",
+      "image": "src/assets/coffee-7.jpg"
+    },
+    {
+      "name": "Coffee with cognac",
+      "alt": "Coffee with cognac and whipped cream",
+      "description": "Fragrant black coffee with cognac and whipped cream",
+      "price": "6.50",
+      "image": "src/assets/coffee-8.jpg"
+    }
+  ],
+  "tea": [
+    {
+      "name": "Moroccan",
+      "alt": "Moroccan tea with tangerine and mint",
+      "description": "Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint",
+      "price": "4.50",
+      "image": "src/assets/tea-1.png"
+    },
+    {
+      "name": "Ginger",
+      "alt": "Ginger tea with lemon and honey",
+      "description": "Original black tea with fresh ginger, lemon and honey",
+      "price": "5.00",
+      "image": "src/assets/tea-2.png"
+    },
+    {
+      "name": "Cranberry",
+      "alt": "Cranberry tea with honey",
+      "description": "Invigorating black tea with cranberry and honey",
+      "price": "5.00",
+      "image": "src/assets/tea-3.png"
+    },
+    {
+      "name": "Sea buckthorn",
+      "alt": "Sea buckthorn tea with thyme and cinnamon",
+      "description": "Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon",
+      "price": "5.50",
+      "image": "src/assets/tea-4.png"
+    }
+  ],
+  "dessert": [
+    {
+      "name": "Marble cheesecake",
+      "alt": "Marble cheesecake with red currant jam",
+      "description": "Philadelphia cheese with lemon zest on a light sponge cake and red currant jam",
+      "price": "3.50",
+      "image": "src/assets/dessert-1.png"
+    },
+    {
+      "name": "Red velvet",
+      "alt": "Red velvet cake",
+      "description": "Layer cake with cream cheese frosting",
+      "price": "4.00",
+      "image": "src/assets/dessert-2.png"
+    },
+    {
+      "name": "Cheesecakes",
+      "alt": "Cheesecakes with berries and powdered sugar",
+      "description": "Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar",
+      "price": "4.50",
+      "image": "src/assets/dessert-3.png"
+    },
+    {
+      "name": "Creme brulee",
+      "alt": "Creme brulee with wild berries",
+      "description": "Delicate creamy dessert in a caramel basket with wild berries",
+      "price": "4.00",
+      "image": "src/assets/dessert-4.png"
+    },
+    {
+      "name": "Pancakes",
+      "alt": "Pancakes with strawberry jam and fresh strawberries",
+      "description": "Tender pancakes with strawberry jam and fresh strawberries",
+      "price": "4.50",
+      "image": "src/assets/dessert-5.png"
+    },
+    {
+      "name": "Honey cake",
+      "alt": "Honey cake with custard",
+      "description": "Classic honey cake with delicate custard",
+      "price": "4.50",
+      "image": "src/assets/dessert-6.png"
+    },
+    {
+      "name": "Chocolate cake",
+      "alt": "Chocolate cake with nuts and dried apricots",
+      "description": "Cake with hot chocolate filling and nuts with dried apricots",
+      "price": "5.50",
+      "image": "src/assets/dessert-7.png"
+    },
+    {
+      "name": "Black forest",
+      "alt": "Black forest cake with cherry jam and chocolate mousse",
+      "description": "A combination of thin sponge cake with cherry jam and light chocolate mousse",
+      "price": "6.50",
+      "image": "src/assets/dessert-8.png"
+    }
+  ]
+}
